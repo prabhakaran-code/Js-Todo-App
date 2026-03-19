@@ -9,10 +9,10 @@ exports.addTodo = (text,cb)=>{
  db.query("INSERT INTO todos (text) VALUES (?)",[text],cb);
 };
 
-exports.updateTodo = (id,isCompleted,cb)=>{
+exports.updateTodo = (id,data,cb)=>{
  db.query(
-  "UPDATE todos SET isCompleted=? WHERE id=?",
-  [isCompleted,id],
+  "UPDATE todos SET text=?, isCompleted=? WHERE id=?",
+  [data.text, data.isCompleted, id],
   cb
  );
 };
