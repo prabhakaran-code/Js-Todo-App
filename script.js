@@ -1,4 +1,4 @@
-const API = "http://localhost:5000/todos";
+const API = "https://js-todo-app-1l6x.onrender.com/api/todos";
 
 const todoForm = document.querySelector("form");
 const todoInput = document.getElementById("todo-input");
