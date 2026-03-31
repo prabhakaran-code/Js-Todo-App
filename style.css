@@ -120,7 +120,7 @@ form {
   padding: 14px 18px;
   background: #151619;
   border-radius: 16px;
-  margin-bottom: 10px;
+  margin-bottom: 12px;
   border: 1px solid rgba(255, 255, 255, 0.05);
   transition: 0.25s;
 }
@@ -146,6 +146,7 @@ form {
 
 .material-symbols-outlined {
   color: var(--secondary-color);
+  font-size: 20px;
 }
 
 .edit-button,
@@ -285,4 +286,56 @@ input[type="checkbox"] {
 .toast.show {
   opacity: 1;
   transform: translateY(0);
+}
+
+/* ============================= */
+/* 📱 MOBILE (max 600px) */
+/* ============================= */
+@media (max-width: 600px) {
+
+  .todo {
+    flex-direction: row; /* keep row */
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px;
+  }
+
+  .todo-text {
+    flex: 1;
+    font-size: 14px;
+  }
+
+  /* ICON GROUP */
+  .todo-actions {
+    display: flex;
+    gap: 8px;
+  }
+
+}
+
+/* ============================= */
+/* 📲 TABLET (601px - 900px) */
+/* ============================= */
+@media (max-width: 900px) {
+
+  .wrapper {
+    width: 90%;
+  }
+
+  h1 {
+    font-size: 28px;
+  }
+
+}
+
+
+/* ============================= */
+/* 💻 LARGE SCREENS (1200px+) */
+/* ============================= */
+@media (min-width: 1200px) {
+
+  .wrapper {
+    width: 800px;
+  }
+
 }
