@@ -1,1 +1,1 @@
-https://landing-page-ozmb.vercel.app/
+https://js-todo-app-gamma.vercel.app/
